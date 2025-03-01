@@ -11,7 +11,7 @@ func TestGetAPIKey(t *testing.T) {
 		value       string
 		shouldError bool
 	}{
-		{name: "Authorization", value: "ApiKey test123", shouldError: true},
+		{name: "Authorization", value: "ApiKey test123", shouldError: false},
 		{name: "Test", value: "ApiKey test123", shouldError: true},
 		{name: "Authorization", value: " test123", shouldError: true},
 	}
